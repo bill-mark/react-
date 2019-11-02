@@ -45,9 +45,6 @@ class TodoList extends React.Component {
 	}
 
 	handleInputChange(e){
-		// this.setState({
-		// 	inputValue : e.target.value
-		// })
 		const value = e.target.value
 		this.setState( ()=>({
 			inputValue: value
@@ -55,10 +52,6 @@ class TodoList extends React.Component {
 	}
 
 	handleBtnClick(){
-		// this.setState({
-		// 	list:[...this.state.list,this.state.inputValue],
-		// 	inputValue:''
-		// })
 		this.setState( (prevState)=>({  //prevState 避免不小心改变state状态
 			list:[...prevState.list,prevState.inputValue],
 		 	inputValue:''
